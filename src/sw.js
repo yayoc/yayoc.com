@@ -74,10 +74,6 @@ self.addEventListener("fetch", function(event) {
       return fetch(fetchRequest)
         .then(function(response) {
           console.log("Response from network is:" + response);
-          var responseToCache = response.clone();
-          caches.open(CURRENT_CACHES.prefetch).then(function(cache) {
-            cache.put(event.request, responseToCache);
-          });
           return response;
         })
         .catch(function(error) {

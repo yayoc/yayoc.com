@@ -1,0 +1,17 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  background: #ececec;
+  color: #424242;
+}
+
+.container {
+  padding: 50px 0;
+  text-align: center;
+}
+
+a {
+  color: #3f85a9;
+}
