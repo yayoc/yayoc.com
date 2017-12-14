@@ -6,7 +6,11 @@ var CURRENT_CACHES = {
 // Here is code to install Service Worker.
 self.addEventListener("install", function(event) {
   var now = Date.now();
-  var urlsToPrefetch = ["assets/images/avatar.png"];
+  var urlsToPrefetch = [
+    "/",
+    "assets/styles/style.css",
+    "assets/images/avatar.png"
+  ];
 
   console.log("Handling install event. Resouses to prefetch:", urlsToPrefetch);
   event.waitUntil(
@@ -37,6 +41,7 @@ self.addEventListener("install", function(event) {
 });
 
 self.addEventListener("activate", function(event) {
+  console.log("Now ready to handle fetch event");
   var expectedCacheNames = Object.keys(CURRENT_CACHES).map(function(key) {
     return CURRENT_CACHES[key];
   });
