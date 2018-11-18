@@ -1,15 +1,33 @@
 html {
-  font-family: sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 body {
   background: #ececec;
   color: #424242;
+  font-size: 1rem;
+  line-height: 1.2;
 }
 
 .container {
-  padding: 50px 0;
-  text-align: center;
+  padding: 1.5rem;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.links {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.links > li {
+  margin-bottom: 0.25rem;
 }
 
 a {
